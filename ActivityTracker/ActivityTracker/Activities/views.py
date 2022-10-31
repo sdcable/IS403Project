@@ -7,7 +7,7 @@ def Spencer(request):
     return HttpResponse('Hello Spencer!') #This will be Spencer's page
 
 def Darby(request):
-    return HttpResponse('Hello Darby!')
+    return HttpResponse('Hello Darby!') #This will be Darby's Page
 
 def Megan(request):
     return HttpResponse('Hello Megan!')
