@@ -14,4 +14,3 @@ def Megan(request):
 
 def Carter(request):
     return HttpResponse('Hello Carter! test') #This will be Carter's page :))))))
-
