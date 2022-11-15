@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-subheading">Choose an area</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'africa' %}">Africa</a> <!--Find the route with the name about and run it.-->
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'asia' %}">Asia</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'australia' %}">Australia</a> <!--These are the names of the paths in the url.py file inside travelsite->.urls-->
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'europe' %}">Europe</a>
+        <br>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'northamerica' %}">North America</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'southamerica' %}">South America</a>
+    </div>
+</header>
+
+{% endblock%}

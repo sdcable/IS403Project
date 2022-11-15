@@ -8,9 +8,9 @@ from .views import Carter
 
 
 urlpatterns = [
-    path("", Home, name="index"),
     path("Spencer", Spencer, name="SpencerPage"),
     path("Darby", Darby, name="DarbyPage"),
     path("Megan", Megan, name="MeganPage"),
-    path("Carter", Carter, name="CarterPage"),   
+    path("Carter", Carter, name="CarterPage"),
+    path("", Home, name="index"),   
 ]   

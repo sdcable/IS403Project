@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-subheading">Megan's Activity Tracker</div>
+        <div class="masthead-heading text-uppercase">We make the world a little smaller</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'index' %}">Tell Me More</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'index' %}">Show Trips!</a> <!--Find the route with the name about and run it.-->
+    </div>
+</header>
+{% endblock%}

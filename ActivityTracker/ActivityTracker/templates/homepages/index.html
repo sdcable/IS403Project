@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-subheading">Activity Tracker</div>
+        <div class="masthead-heading text-uppercase">View our team activites</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'SpencerPage' %}">Spencer's Activity</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'CarterPage' %}">Carter's Activity</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'MeganPage' %}">Megan's Activity</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'DarbyPage' %}">Darby's Activity</a>
+        <!--<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="">Show Trips!</a> Find the route with the name about and run it.-->
+    </div>
+</header>
+{% endblock%}
