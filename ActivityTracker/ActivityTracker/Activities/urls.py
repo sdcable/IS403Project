@@ -4,6 +4,7 @@ from .views import Spencer
 from .views import Darby
 from .views import Megan
 from .views import Carter
+from .views import samplesView
 
 
 
@@ -12,5 +13,6 @@ urlpatterns = [
     path("Darby", Darby, name="DarbyPage"),
     path("Megan", Megan, name="MeganPage"),
     path("Carter", Carter, name="CarterPage"),
-    path("", Home, name="index"),   
+    path("", Home, name="index"),
+    path("samples", samplesView, name="index"),   
 ]   
