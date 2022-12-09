@@ -129,3 +129,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'Activities/static')]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #carter test yipeeeee
+
+
+#Yeah you sucker hahaha
