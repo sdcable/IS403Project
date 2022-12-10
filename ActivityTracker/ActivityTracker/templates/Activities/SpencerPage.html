@@ -2,128 +2,115 @@
 {% load static %}
 {% block content %}
 <!-- Masthead-->
-<div class="page-header page-header-xs" data-parallax="true" style="background-image: url({% static 'img/clouds.png' %});">
+<div class="page-header page-header-xs" data-parallax="true" style="background-image: url({% static 'img\joshua-stannard.jpg' %});">
     <div class="filter"></div>
   </div>
   <div class="section profile-content">
     <div class="container">
       <div class="owner">
-        <div class="avatar">)
-          <img src="{% static 'img/faces/joe-gardner-2.jpg' %}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+        <br>
+        <div class="avatar">
+          <img src="{% static 'img\spencercable.jpg' %}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+          <!--Insert Picture from Database above-->
         </div>
         <div class="name">
-          <h4 class="title">Jane Faker
-            <br />
+          <h4 class="title">Spencer Cable <!--Insert Name here from Database-->
+            <br/>
           </h4>
-          <h6 class="description">A cool Producer of Music</h6>
+          <h6 class="description">A Disc Golf Pro</h6> <!--Decide if we want descriptions-->
         </div>
       </div>
       <div class="row">
         <div class="col-md-6 ml-auto mr-auto text-center">
-          <p>An artist of considerable range, Jane Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
+          <p>I'm trying to think of something to put here. Any thoughts per person?</p>
           <br />
-          <btn class="btn btn-outline-default btn-round"><i class="fa fa-cog"></i> Settings</btn>
+          <btn class="btn btn-outline-default btn-round"><i class="fa fa-cog"></i> Update Contact Info</btn>
+          <btn class="btn btn-outline-default btn-round"> Add a New Activity</btn>
         </div>
       </div>
-      <br/>
-      <div class="nav-tabs-navigation">
-        <div class="nav-tabs-wrapper">
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#follows" role="tab">Follows</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#following" role="tab">Following</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- Tab panes -->
-      <div class="tab-content following">
-        <div class="tab-pane active" id="follows" role="tabpanel">
-          <div class="row">
-            <div class="col-md-6 ml-auto mr-auto">
-              <ul class="list-unstyled follows">
-                <li>
-                  <div class="row">
-                    <div class="col-lg-2 col-md-4 col-4 ml-auto mr-auto">
-                      <img src="{% static 'img/faces/joe-gardner-2.jpg' %}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                    </div>
-                    <div class="col-lg-7 col-md-4 col-4  ml-auto mr-auto">
-                      <h6>Flume
-                        <br/>
-                        <small>Musical Producer</small>
-                      </h6>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-4  ml-auto mr-auto">
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" value="" checked>
-                          <span class="form-check-sign"></span>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <hr />
-                <li>
-                  <div class="row">
-                    <div class="col-lg-2 col-md-4 col-4 mx-auto ">
-                      <img src="{% static 'img/faces/ayo-ogunseinde-2.jpg' %}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                    </div>
-                    <div class="col-lg-7 col-md-4 col-4">
-                      <h6>Banks
-                        <br />
-                        <small>Singer</small>
-                      </h6>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-4">
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" value="">
-                          <span class="form-check-sign"></span>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane text-center" id="following" role="tabpanel">
-          <h3 class="text-muted">Not following anyone yet :(</h3>
-          <button class="btn btn-warning btn-round">Find artists</button>
-        </div>
+      <div>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+        <!--Example table with filter-->
+        <table id="myTable">
+          <tr class="header">
+            <th style="width:60%;">Name</th>
+            <th style="width:40%;">Country</th>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Berglunds snabbkop</td>
+            <td>Sweden</td>
+          </tr>
+          <tr>
+            <td>Island Trading</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+            <td>Koniglich Essen</td>
+            <td>Germany</td>
+          </tr>
+        </table>
       </div>
     </div>
-  </div>
-  <footer class="footer    ">
-    <div class="container">
-      <div class="row">
-        <nav class="footer-nav">
-          <ul>
-            <li>
-              <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>
-            </li>
-            <li>
-              <a href="http://blog.creative-tim.com/" target="_blank">Blog</a>
-            </li>
-            <li>
-              <a href="https://www.creative-tim.com/license" target="_blank">Licenses</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="credits ml-auto">
-          <span class="copyright">
-            ©
-            <script>
-              document.write(new Date().getFullYear())
-            </script>, made with <i class="fa fa-heart heart"></i> by Creative Tim
-          </span>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <script>
+      function myFunction() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+      
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+      </script>
+      <style>
+        #myInput {
+          background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+          background-position: 10px 12px; /* Position the search icon */
+          background-repeat: no-repeat; /* Do not repeat the icon image */
+          width: 100%; /* Full-width */
+          font-size: 16px; /* Increase font-size */
+          padding: 12px 20px 12px 40px; /* Add some padding */
+          border: 1px solid #ddd; /* Add a grey border */
+          margin-bottom: 12px; /* Add some space below the input */
+        }
+        
+        #myTable {
+          border-collapse: collapse; /* Collapse borders */
+          width: 100%; /* Full-width */
+          border: 1px solid #ddd; /* Add a grey border */
+          font-size: 18px; /* Increase font-size */
+        }
+        
+        #myTable th, #myTable td {
+          text-align: left; /* Left-align text */
+          padding: 12px; /* Add padding */
+        }
+        
+        #myTable tr {
+          /* Add a bottom border to all table rows */
+          border-bottom: 1px solid #ddd;
+        }
+        
+        #myTable tr.header, #myTable tr:hover {
+          /* Add a grey background color to the table header and on hover */
+          background-color: #f1f1f1;
+        }
+      </style>
   
 {% endblock%}
