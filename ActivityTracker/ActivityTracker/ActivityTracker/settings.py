@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'is403project',
         'USER': 'postgres',
-        'PASSWORD': 'PasswordToday!',
+        'PASSWORD': 'ironman6',
         'Host' : 'localhost'
     }
 }
@@ -122,7 +122,7 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'Activities/static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'ActivityTracker/static')]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -130,5 +130,5 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'Activities/static')]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #carter test yipeeeee
 
-
+LOGIN_REDIRECT_URL = "viewActivities"
 #Yeah you sucker hahaha
